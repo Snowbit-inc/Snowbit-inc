@@ -29,6 +29,30 @@
         <a href="yjcarnavi://navi/select?lat=36.76908156219559&lon=139.10805969804065&name=Kawaba">川場スキー場</a>
     </div>
 
+<!--
+yjcarnavi://navi/select?lat=35.6815038&lon=139.766874&name=%E6%9D%B1%E4%BA%AC%E9%A7%85
+
+yjcarnavi://navi/select?point=current&point=35.6284756,139.736571,&point=35.7141672,139.7774091,&point=35.7295071,139.7087114,&point=35.689611,139.6983826,
+
+lat	緯度（※1）
+lon	経度（※1）
+name	目的地名称（※2）
+referer	遷移元の識別子（map|news など）
+point	複数指定の場合の地点
+・1点のみ指定した場合
+　出発地：現在地・目的地：指定した緯度経度　でルート選択画面を表示。
+・2点指定した場合
+　出発地：1点目に指定した緯度経度・目的地：2点目で指定された緯度経度　でルート選択画面を表示。
+・3〜5点指定した場合
+　出発地：1点目に指定した緯度経度・経由地：2〜最後から1つ前の点に指定した緯度経度・目的地：最後に指定された緯度経度　でルート選択画面を表示。
+
+・現在地を指定する場合はcurrent。
+・緯度,経度,名称は半角カンマで区切る。
+・名称の中に半角カンマを入れることができる。
+・名称は省略可能で、"緯度,経度"と"緯度,経度,"は同じとみなす。
+・名称を省略された場合の挙動はnameパラメータを指定しない場合に準じる。
+-->
+
 <!-- Add your site or application content here -->
 <p>Hello world! This is HTML5 Boilerplate.</p>
 <script src="js/vendor/modernizr-3.11.4.min.js"></script>
